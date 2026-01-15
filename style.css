@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'poppins', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-size: 1.6rem;
+  background-color: #1C1D20;
+  color: white;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+.container{
+    max-width: 144rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    gap: 5rem;
+}
+
+.subHeader{
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  padding: 0.5rem;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #1C1D20;
+}
+
+header h1{
+  font-family: "Style Script", cursive;
+  font-weight: 500;
+  color: #FFDA4B;
+  font-size: 3.5rem;
+}
+
+nav ul{
+  display: flex;
+  gap: 2.5rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+nav ul a:hover{
+  color: #FFDA4B;
+  transition: all 0.2s ease-in-out;
+}
+
+h2{
+  font-size: 3rem;
+}
+
+#atual{
+  color: #FFDA4B;
+}
+
+.carousel{
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.carousel img{
+  width: 100%;
+}
+
+#produtos{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  color: #1C1D20;
+  max-width: 30rem;
+  border-radius: 1rem;
+}
+
+.card img{
+  width: 100%;
+  height: 100%;
+}
+
+.cards{
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.conteudoCard{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+  font-weight: 550;
+  font-size: 13pt;
+}
+
+#loja{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  justify-content: center;
+}
+
+.conteudoEndereco{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+}
+
+.txtEndereco{
+  text-align: left;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+#endereco{
+  font-size: 2rem;
+  width: 75%;
+}
+
+.iframe{
+  border: #FFDA4B 0.5rem solid;
+  width: 51rem;
+  height: 41rem;
+}
+
+#contato{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.contacts{
+  display: flex;
+  justify-content: center;
+  gap: 15rem;
+}
+
+.conteudoContato img{
+  width: 7rem;
+}
+
+.conteudoContato{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.8rem;
+}
+
+.button{
+  background-color: #FFDA4B;
+  border-radius: 1rem;
+  border: none;
+  padding: 0.7rem;
+  color: white;
+  font-weight: 500;
+}
+
+#entrega{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(255, 255, 255);
+  border-left: none;
+  border-right: none;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+#envio{
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.conteudoEntrega{
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+footer{
+  background-color: #FFDA4B;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+}
+
+footer span{
+  font-family: 'Style Script', cursive;
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+
+/* --- RESPONSIVIDADE --- */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 2rem;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .conteudoEndereco {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+
+    .txtEndereco {
+        text-align: center;
+        font-size: 2.2rem;
+    }
+
+    #endereco {
+        width: 100%;
+        font-size: 1.8rem;
+    }
+
+    .contacts {
+        flex-direction: column;
+        gap: 5rem;
+        align-items: center;
+    }
+
+    #entrega {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #envio {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 55%;
+    }
+
+    header h1 {
+        font-size: 4rem;
+    }
+
+    .cards {
+        gap: 2rem;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+}
